@@ -1,12 +1,6 @@
 import numpy as np
 
 class Perceptron:
-    # how many perceptron - num_inputs
-    # learning rate - in backpropagation, learning rate determines by how much to change the weights, 
-    # lower learning rate means smaller model will learn
-    # epochs - how many training cycles
-    # weights - multiplication factors for each input
-
     def __init__(self, num_inputs, learning_rate=0.01, epochs=100):
         self.weights = np.zeros(num_inputs) # initialize weights to zero
         self.bias = 0 # adjustment factor
